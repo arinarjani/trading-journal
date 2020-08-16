@@ -29,7 +29,7 @@ function ShowAll() {
             <div className="card">
                 <img src={trade.screenshot} alt="trade screenshot" />
                 <h3>{trade.title.toUpperCase()}</h3>
-                <p>{trade.timeStamp}</p>
+                <p>{new Date(trade.timeStamp).toLocaleDateString()}</p>
                 <Link to={`/trades/${trade._id}`} className="button">details</Link>
             </div>
         ))}

@@ -10,16 +10,6 @@ const TradeDetail = ({match}) => {
       }, []);
     
       const grabDataFromDB = async () => {
-        // await fetch(`/trades/${match.params.id}`)
-        //       .then(data => data.json())
-        //       .then(res => {
-        //         console.log('TradeDetail.js:201 - res:', res.trade)
-        //         setTradeData(res.trade);
-        //       })
-        //       .catch( err => {
-        //         // you should do some error handling here
-        //       })
-
         try {
           const response = await fetch(`/trades/${match.params.id}`);
           const trade = await response.json();
@@ -42,20 +32,22 @@ const TradeDetail = ({match}) => {
             <p><b>Price target 1</b>: ${tradeData.priceTargetOne}</p>
             <p><b>Price Target 2</b>: ${tradeData.priceTargetTwo}</p>
             <p><b>Summary</b>: {tradeData.summary}</p>
-            <Link
-              to={{
-                pathname: `/trades/${match.params.id}/edit`,
-                state: { tradeData }
-              }}
-              className="button"
-            >Edit</Link>
-            <Link
-              to={{
-                pathname: `/trades/${match.params.id}/delete`,
-                state: { tradeData }
-              }}
-              className="button"
-            >Delete</Link>
+            <div className="edit-delete">
+              <Link
+                to={{
+                  pathname: `/trades/${match.params.id}/edit`,
+                  state: { tradeData }
+                }}
+                className="button mr-1"
+              >Edit</Link>
+              <Link
+                to={{
+                  pathname: `/trades/${match.params.id}/delete`,
+                  state: { tradeData }
+                }}
+                className="button"
+              >Delete</Link>
+            </div>
         </div>
       )
     } else {

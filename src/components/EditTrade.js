@@ -54,7 +54,7 @@ const EditTrade = (props) => {
           type="date"
           placeholder="Enter the date"
           name="timeStamp"
-          value={editData.timeStamp}
+          value={new Date(editData.timeStamp).toLocaleDateString('en-GB').split('/').reverse().join('-')}
           onChange={onChange}
         />
         <input
