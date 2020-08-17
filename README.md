@@ -37,32 +37,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## The Idea
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This app is for me to journal my trades. The idea came from SMB Capital's videos on YouTube talking about how their traders journal to get better at their craft. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## The Stack
 
-### Code Splitting
+This app uses Express for the backend and follows RESTful routing. MongoDB is the chosen database, and Mongoose is how I work with the database. For the front-end, I am using React and React Router to display and transition between pages.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## TODO
 
-### Analyzing the Bundle Size
+learn how to set up tests and do more error handling
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
