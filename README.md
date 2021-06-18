@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## TODO
+- for `express` use something like `app.use(express.static('build'));` to serve the build folder after running `npm run build` in create-react-app
+
 ## Before stating
 Make a `.env` file and put in your mongoDB link as `MONGODB_URI` 
 
