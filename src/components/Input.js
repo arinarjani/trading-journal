@@ -30,7 +30,7 @@ function Input() {
   // handle the submit to the server
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log('e', e);
+    console.log('event', e);
     // submit data to database via mongoose
     // console.log('state:', state);
     // grab e data

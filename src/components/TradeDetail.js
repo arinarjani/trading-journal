@@ -7,7 +7,7 @@ const TradeDetail = ({match}) => {
 
     useEffect(() => {
         grabDataFromDB();
-      }, []);
+    }, []);
     
       const grabDataFromDB = async () => {
         try {

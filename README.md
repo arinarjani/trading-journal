@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Before stating
+Make a `.env` file and put in your mongoDB link as `MONGODB_URI` 
+
 ## Available Scripts
 
 In the project directory, you can run:
