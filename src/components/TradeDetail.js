@@ -7,7 +7,8 @@ const TradeDetail = ({match}) => {
 
     useEffect(() => {
         grabDataFromDB();
-    }, []);
+    }); // used to have [], but got Line 10:8:  React Hook useEffect has a missing dependency: 'grabDataFromDB'. Either include it or 
+        //remove the dependency array  react-hooks/exhaustive-deps
     
       const grabDataFromDB = async () => {
         try {
